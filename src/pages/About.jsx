@@ -1,5 +1,7 @@
-export default function About(){
-    return (
-        <div>tt</div>
-    )
+import React from 'react'
+
+export default function about() {
+  return (
+    <div>about</div>
+  )
 }
