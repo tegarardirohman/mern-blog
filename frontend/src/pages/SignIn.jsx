@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { Label, TextInput } from 'flowbite-react';
+import { Link } from 'react-router-dom';
 
 export default function SignIn() {
   return (
-    <div>SignIn</div>
+    <div>ini halaman sign in</div>
   )
 }

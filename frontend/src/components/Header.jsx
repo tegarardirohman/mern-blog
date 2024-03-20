@@ -5,6 +5,7 @@ import { FaMoon } from 'react-icons/fa';
 
 export default function Header() {
     const path = useLocation().pathname;
+
   return (
     <Navbar fluid rounded className='border-b-2 px-5'>
         <Link to="/">
@@ -30,9 +31,16 @@ export default function Header() {
                 <FaMoon />
             </Button>
 
-            <Link to="/sign-in"> 
-                <Button className='h-10' gradientDuoTone='purpleToBlue' outline>Sign In</Button>
-            </Link>
+            {(path === "/sign-up")?(
+                <Link to="/sign-in"> 
+                    <Button className='h-10' gradientDuoTone='purpleToBlue' outline>Sign In</Button>
+                </Link>
+            ) : (
+                <Link to="/sign-up"> 
+                    <Button className='h-10' gradientDuoTone='purpleToBlue' outline>Sign Up</Button>
+                </Link>
+            )}
+
             <Navbar.Toggle />
         </div>
 
